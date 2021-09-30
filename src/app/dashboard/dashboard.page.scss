@@ -1,0 +1,30 @@
+ion-toolbar {    
+    --background: #00bee4;
+    --background: -webkit-gradient(linear, right top, left top, from(#00bee4), to(#0091d2));
+    --background: linear-gradient(to left, #00bee4 0%, #0091d2 100%);
+    color: white;
+}
+ion-content{    
+    --background: linear-gradient(to left, #00bee4 0%, #0091d2 100%);
+}
+ion-slide{
+    margin-right: 0 !important;
+    
+    .condiner{
+        padding: 0;
+    }
+    ion-card{
+        border-radius: 12px;
+    }
+}
+.yesno-btn{
+    margin: 0 0 2px 6px;
+    text-align: center;
+    background: orange;
+    padding: 12px;
+    border-radius: 24px;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+
+}

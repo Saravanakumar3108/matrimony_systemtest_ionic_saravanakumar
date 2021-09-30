@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar hideBackButton="true">
+    <ion-buttons slot="start" style="color: white !important;">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{List.heading1}} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="List">
+  <ion-col col-12 text-left >
+    <!-- <ion-card padding> -->
+      <ion-title font-bold padding color-white>
+        {{List.data.length}} {{List.title}}
+      </ion-title>
+
+    <!-- </ion-card> -->
+ 
+  <!-- <ion-slides [options]="slideOpts"> -->
+    <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide *ngFor="let loop of List.data;let i = index">
+          <ion-col col-12  class="condiner">
+            <ion-card padding box-shadow>
+              <img (click)="goTOProfile(loop)" src="{{loop.image[0]}}" alt="" >
+              <ion-card-content >
+                <ion-card-title margin-top text-left>{{loop.name}}</ion-card-title>
+                <ion-card-subtitle  font-bold text-left >{{loop.text1}}</ion-card-subtitle>
+                <ion-card-subtitle text-uppercase font-bold text-left>{{loop.text2}}</ion-card-subtitle>
+                <ion-card-subtitle text-uppercase font-bold text-left>{{loop.text3}}</ion-card-subtitle>
+              </ion-card-content>
+              
+                      <!--button--> 
+              <ion-row text-left>
+                <ion-col col-4>
+                  <button class="yesno-btn" ion-button type="button" (click)="goTOProfile(loop)">
+                    <ion-label>Yes</ion-label>
+                  </button>
+                  </ion-col>
+                  
+                <ion-col col-4>
+                  <button class="yesno-btn" ion-button type="button" (click)="Profile_dislike(loop)">
+                    <ion-label>No</ion-label>
+                  </button>
+                </ion-col>
+                
+                <ion-col col-4></ion-col>
+                
+                <!-- <ion-col col-3></ion-col> -->
+              </ion-row>
+            </ion-card>
+          </ion-col>
+    </ion-slide>
+  </ion-slides>
+  </ion-col>
+</ion-content> 

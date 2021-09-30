@@ -1,0 +1,53 @@
+ion-toolbar {    
+    --background: #44e283;
+    --background: -webkit-gradient(linear, right top, left top, from(#44e283), to(#2fdf75));
+    --background: linear-gradient(to left, #44e283 0%, #2fdf75 100%);
+    color: white;
+}
+ion-content{    
+    --background: linear-gradient(to left, #44e283 0%, #2fdf75 100%);
+}
+ion-slide{
+   // margin-right: 0 !important;
+    
+    .condiner{
+       // padding: 0;
+    }
+    ion-card{
+        border-radius: 12px;
+    }
+}
+.yesno-btn{
+    margin: 0 0 0px 4px;
+    text-align: center;
+    background: orange;
+    padding: 5px;
+    border-radius: 12px;
+    width: 43%;
+    color: white;
+    font-weight: bold;
+
+}
+
+
+img{
+    width:100%;
+    height:100%;
+  }
+  
+  .myCard{
+    position:relative;
+  }
+  
+  .myOverlay{
+      width: 14%;
+      height: 19px;
+      position: absolute;
+      z-index: 99;
+      bottom: 10px;
+      right:10px;
+      opacity: 0.5;
+      background: #000;
+      color: #fff;
+      border-radius: 5px;
+  }

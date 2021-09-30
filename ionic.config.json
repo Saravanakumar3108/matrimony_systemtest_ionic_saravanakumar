@@ -1,0 +1,7 @@
+{
+  "name": "mmst",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

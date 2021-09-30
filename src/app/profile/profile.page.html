@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/dashboard"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ 'Profile' | translate }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide *ngFor="let loop of pdata.image;let i = index">
+     
+              <ion-card background-size no-margin [ngStyle]="{'background-image': 'url(' + loop + ')'}" class="cardimage">
+                
+                <ion-card-content font-bold color-white text-left> <ion-icon (click)="goback()" name="arrow-back-outline"></ion-icon> {{pdata.no}}      ({{i+1}}/{{pdata.image.length}})</ion-card-content>
+                           
+            </ion-card> 
+            
+    </ion-slide>
+  </ion-slides>
+  
+  <ion-card class="bottom-card">
+    <ion-card-header>
+      <ion-card-title font-bold>{{pdata.name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content font-bold>
+      {{pdata.text1}} {{pdata.text2}}  {{pdata.text3}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

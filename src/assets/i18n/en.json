@@ -1,0 +1,179 @@
+{	
+"items":{
+    "heading1": "Dashboard",
+    "heading2": "Matrimony",
+    "heading3": "matrimony@matrimony.com",
+    "heading4": "Profile",    
+    "title": "Profiles pending with me", 
+    "menu":{
+      "DailyRecommendation": "Daily Recommendation"
+    },
+    "DailyRecommendation":[{
+      "heading1": "Daily Recommendation", 
+      "data": [{
+        "id" : 1,
+        "no" : "MM001",
+        "name": "Priyanka",
+        "text1": "27 Yrs, 5 ft 2 in, Tamil, Nair,",
+        "text2": "MBBS, Doctor, Chennai,",
+        "text3": "Tamil Nadu, India.",
+        "image":"../assets/imgs/1.jpg",
+        "verify": "Verified",
+        "mtype": "Premium NRI",
+        "shortlist": "shortlist",
+        "Like": "Like her?"
+        },
+        {
+          "id" : 2,
+          "no" : "MM002",
+          "name": "Priyanka",
+          "text1": "27 Yrs, 5 ft 2 in, Tamil, Nair,",
+          "text2": "MBBS, Doctor, Chennai,",
+          "text3": "Tamil Nadu, India.",
+          "image":"../assets/imgs/7.jpg",
+          "verify": "Verified",
+          "mtype": "Premium NRI",
+          "shortlist": "shortlist",
+          "Like": "Like her?"
+        },
+        {
+          "id" : 3,
+          "no" : "MM003",
+          "name": "Priyanka",
+          "text1": "27 Yrs, 5 ft 2 in, Tamil, Nair,",
+          "text2": "MBBS, Doctor, Chennai,",
+          "text3": "Tamil Nadu, India.",
+          "image":"../assets/imgs/13.jpg",
+          "verify": "Verified",
+          "mtype": "Premium NRI",
+          "shortlist": "shortlist",
+          "Like": "Like her?"
+        },
+        {
+          "id" : 4,
+          "no" : "MM004",
+          "name": "Priyanka",
+          "text1": "27 Yrs, 5 ft 2 in, Tamil, Nair,",
+          "text2": "MBBS, Doctor, Chennai,",
+          "text3": "Tamil Nadu, India.",
+          "image":"../assets/imgs/19.jpg",
+          "verify": "Verified",
+          "mtype": "Premium NRI",
+          "shortlist": "shortlist",
+          "Like": "Like her?"
+        },
+        {
+          "id" : 5,
+          "no" : "MM005",
+          "name": "Priyanka",
+          "text1": "27 Yrs, 5 ft 2 in, Tamil, Nair,",
+          "text2": "MBBS, Doctor, Chennai,",
+          "text3": "Tamil Nadu, India.",
+          "image":"../assets/imgs/25.jpg",
+          "verify": "Verified",
+          "mtype": "Premium NRI",
+          "shortlist": "shortlist",
+          "Like": "Like her?"
+        },
+        {
+          "id" : 6,
+          "no" : "MM006",
+          "name": "Priyanka",
+          "text1": "27 Yrs, 5 ft 2 in, Tamil, Nair,",
+          "text2": "MBBS, Doctor, Chennai,",
+          "text3": "Tamil Nadu, India.",
+          "image":"../assets/imgs/31.jpg",
+          "verify": "Verified",
+          "mtype": "Premium NRI",
+          "shortlist": "shortlist",
+          "Like": "Like her?"
+        }
+      ]
+     }],     
+    "data": [{
+        "id" : 1,
+        "no" : "MM001",
+        "name": "Priyanka",
+        "text1": "27 Yrs, 5 ft 2 in, Tamil, Nair,",
+        "text2": "MBBS, Doctor, Chennai,",
+        "text3": "Tamil Nadu, India.",
+        "image":["../assets/imgs/1.jpg",
+              "../assets/imgs/2.jpg",
+              "../assets/imgs/3.jpg",
+              "../assets/imgs/4.jpg",
+              "../assets/imgs/5.jpg",
+              "../assets/imgs/6.jpg"]
+    },
+    {
+      "id" : 2,
+      "no" : "MM002",
+      "name": "Priyanka",
+      "text1": "27 Yrs, 5 ft 2 in, Tamil, Nair,",
+      "text2": "MBBS, Doctor, Chennai,",
+      "text3": "Tamil Nadu, India.",
+      "image":["../assets/imgs/7.jpg",
+        "../assets/imgs/8.jpg",
+        "../assets/imgs/9.jpg",
+        "../assets/imgs/10.jpg",
+        "../assets/imgs/11.jpg",
+        "../assets/imgs/12.jpg"]
+    },
+    {
+      "id" : 3,
+      "no" : "MM003",
+      "name": "Priyanka",
+      "text1": "27 Yrs, 5 ft 2 in, Tamil, Nair,",
+      "text2": "MBBS, Doctor, Chennai,",
+      "text3": "Tamil Nadu, India.",
+      "image":["../assets/imgs/13.jpg",
+              "../assets/imgs/14.jpg",
+              "../assets/imgs/15.jpg",
+              "../assets/imgs/16.jpg",
+              "../assets/imgs/17.jpg",
+              "../assets/imgs/18.jpg"]
+    },
+    {
+      "id" : 4,
+      "no" : "MM004",
+      "name": "Priyanka",
+      "text1": "27 Yrs, 5 ft 2 in, Tamil, Nair,",
+      "text2": "MBBS, Doctor, Chennai,",
+      "text3": "Tamil Nadu, India.",
+      "image":["../assets/imgs/19.jpg",
+        "../assets/imgs/20.jpg",
+        "../assets/imgs/21.jpg",
+        "../assets/imgs/22.jpg",
+        "../assets/imgs/23.jpg",
+        "../assets/imgs/24.jpg"]
+    },
+    {
+      "id" : 5,
+      "no" : "MM005",
+      "name": "Priyanka",
+      "text1": "27 Yrs, 5 ft 2 in, Tamil, Nair,",
+      "text2": "MBBS, Doctor, Chennai,",
+      "text3": "Tamil Nadu, India.",
+      "image":["../assets/imgs/25.jpg",
+        "../assets/imgs/26.jpg",
+        "../assets/imgs/27.jpg",
+        "../assets/imgs/28.jpg",
+        "../assets/imgs/29.jpg",
+        "../assets/imgs/30.jpg"]
+    },
+    {
+      "id" : 6,
+      "no" : "MM006",
+      "name": "Priyanka",
+      "text1": "27 Yrs, 5 ft 2 in, Tamil, Nair,",
+      "text2": "MBBS, Doctor, Chennai,",
+      "text3": "Tamil Nadu, India.",
+      "image":["../assets/imgs/31.jpg",
+      "../assets/imgs/32.jpg",
+      "../assets/imgs/33.jpg",
+        "../assets/imgs/34.jpg",
+        "../assets/imgs/35.jpg",
+        "../assets/imgs/36.jpg"]
+    }]
+  }
+}
+

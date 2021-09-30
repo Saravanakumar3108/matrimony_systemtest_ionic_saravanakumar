@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/dashboard"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ drdata.heading1 | translate }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen> <!-- (ionSlideDidChange)="onSlideChange()" -->
+  <ion-slides pager="true" [options]="slideOpts" (ionSlideWillChange)="slideChanged($event,0)"  #slides>
+    <ion-slide *ngFor="let loop of drdata.data;let i = index"   >
+     
+        <ion-card class="myCard" box-shadow>
+          
+          <ion-card-content no-padding >
+          <!-- <img src="{{loop.image}}" alt="{{loop.no}}" (click)="move(slides,i+2)"/> -->
+          <img src="{{loop.image}}" alt="{{loop.no}}" />
+            <ion-card-subtitle class="myOverlay"><ion-icon name="image-outline"></ion-icon> {{i+1}}/{{drdata.data.length}}</ion-card-subtitle>
+          </ion-card-content>
+          <ion-card-content >
+            <ion-card-subtitle text-left >
+              <ion-icon name="shield-checkmark-outline"></ion-icon> {{loop.verify}}
+              
+              <ion-icon name="paw-outline"></ion-icon> {{loop.mtype}}
+            </ion-card-subtitle>
+  
+            <ion-card-title margin-top text-left>{{loop.name}}</ion-card-title>
+            <ion-card-subtitle  font-bold text-left >{{loop.text1}}</ion-card-subtitle>
+            <ion-card-subtitle text-uppercase font-bold text-left>{{loop.text2}}</ion-card-subtitle>
+            <ion-card-subtitle text-uppercase font-bold text-left>{{loop.text3}}</ion-card-subtitle>
+          
+
+          <ion-row col-12 text-left padding>
+            
+            <ion-col (click)="slideChanged(loop,3)">
+            <ion-icon name="star-outline" ></ion-icon> {{loop.shortlist}}
+          </ion-col>
+          
+            <ion-col text-right>
+
+              {{loop.Like}} 
+              </ion-col>
+              <ion-col col-4 no-padding>
+              <button class="yesno-btn" ion-button type="button" (click)="slideChanged(loop,2)">
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <button class="yesno-btn" ion-button type="button" (click)="slideChanged(loop,1)">
+                <ion-icon name="checkmark-outline"></ion-icon>
+              </button>
+               
+              
+            </ion-col>
+            </ion-row>
+          </ion-card-content>
+
+          
+        </ion-card>
+      
+            
+    </ion-slide>
+  </ion-slides>   
+</ion-content>

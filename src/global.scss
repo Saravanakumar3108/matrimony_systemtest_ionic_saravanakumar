@@ -1,0 +1,206 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+ @import '~ngx-toastr/toastr';
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+/* Settings Toolbar Section
+================================================*/
+.toolbar .toolbar-background {
+    background: #00bee4;
+    background: -webkit-gradient(linear, right top, left top, from(#00bee4), to(#0091d2));
+    background: linear-gradient(to left, #00bee4 0%, #0091d2 100%);
+  }
+  
+  .toolbar .toolbar-title {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  [text-center] {
+    text-align: center !important;
+  }
+  
+  [text-justify] {
+    text-align: justify !important;
+  }
+  
+  [text-start] {
+    text-align: left;
+    text-align: start !important;
+  }
+  
+  [text-end] {
+    text-align: right;
+    text-align: end !important;
+  }
+  
+  [text-left] {
+    text-align: left !important;
+  }
+  
+  [text-right] {
+    text-align: right !important;
+  }
+  
+  [text-nowrap] {
+    white-space: nowrap !important;
+  }
+  
+  [text-wrap] {
+    white-space: normal !important;
+  }
+
+  // Icon Settings Color and Size
+[icon-small] {
+  color: theme-colors('textColors', 'primary') !important;
+  font-size: icon-size('icon-small') !important;
+}
+[icon-medium] {
+  color: theme-colors('textColors', 'primary') !important;
+  font-size: icon-size('icon-medium') !important;
+}
+
+[icon-large] {
+  color: theme-colors('textColors', 'primary') !important;
+  font-size: icon-size('icon-large') !important;
+}
+
+[font-bold] {
+  font-weight: bold !important;
+}
+
+[small-font] {
+  margin-bottom: 5px;
+}
+
+[box-shadow] {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1) !important;
+  z-index: 999;
+}
+
+[color-white] {
+  color: #ffffff !important;
+}
+
+.box-shadow {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1) !important;
+  z-index: 999;
+}
+
+[background-size] {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+[header-background-image] {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  background-blend-mode: luminosity;
+}
+
+[header-background-image]::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  background: #00bee4;
+  background: -webkit-gradient(linear, right top, left top, from(#00bee4), to(#0091d2));
+  background: linear-gradient(to left, #00bee4 0%, #0091d2 100%);
+}
+
+[header-background-image] img {
+  padding-top: 40px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  z-index: 9;
+  max-width: 60px;
+}
+
+[header-background-image] [item-title] {
+  color: white !important;
+  position: relative;
+  z-index: 9;
+}
+
+// ion-card {
+//   position: relative;
+//   height: 130px;
+//   width: 100% !important;
+// }
+
+//  [gallery-title] {
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   padding: 10px;
+//   background: rgba(0, 190, 228, 0.5) 0%;
+//   background: -webkit-gradient(linear, right top, left top, from(rgba(0, 190, 228, 0.5)), to(rgba(0, 145, 210, 0.5)));
+//   background: linear-gradient(to left, rgba(0, 190, 228, 0.5) 0% 0%, rgba(0, 145, 210, 0.5) 100% 100%);
+//   top: 0;
+//   min-height: 45px;
+//   border-bottom: 1px solid transparent !important;
+// }
+
+// [gallery-title] [item-subtitle],
+//  [gallery-title] [item-title] {
+//   color: white !important;
+// }
+
+[gallery-title] ion-icon {
+  position: absolute;
+  right: 10px;
+  top: 25px;
+  color: #00c0e8;
+  font-size: 20px;
+}
+
+[text-uppercase] {
+  text-transform: uppercase !important;
+}
+
+[text-lowercase] {
+  text-transform: lowercase !important;
+}
+
+[text-capitalize] {
+  text-transform: capitalize !important;
+}
+
+[no-margin]{
+  margin: 0 !important;
+}
+[no-padding]{
+  padding: 0 !important;
+}
